@@ -1,0 +1,295 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap');
+html,
+body {
+	overflow-x: hidden
+}
+
+body {
+	font-family: 'Montserrat', sans-serif;
+	background-color: #131313;
+	color: #fff
+}
+
+a {
+	color: #fff !important;
+	text-decoration: none;
+}
+
+a.nav-link:hover::after {
+	content: '';
+	position: absolute;
+	display: block;
+	width: 1.5rem;
+	border-bottom: 2.5px solid #fff;
+	z-index: 0;
+	margin-top: 0.2rem;
+}
+
+::selection {
+	color: #fff;
+	background: #262626;
+}
+
+/* 
+------------------------------------------- 
+	UTILITY 
+-------------------------------------------
+*/
+.bg-black {
+	background-color: #000 !important;
+}
+
+.bg-white-80 {
+	background-color: #F6F6F6 !important;
+}
+
+.text-white {
+	color: #fff !important;
+}
+
+.text-black {
+	color: #000 !important;
+}
+
+.text-fade-1 {
+	color: rgba(255, 255, 255, .5) !important;
+}
+
+.text-fade-black-1 {
+	color: rgba(0, 0, 0, .5) !important;
+}
+
+.pointer {
+	cursor: pointer;
+}
+
+.leading-tight {
+	line-height: 1.25;
+}
+
+.leading-snug {
+	line-height: 1.375;
+}
+
+.leading-normal {
+	line-height: 1.5;
+}
+
+.leading-relaxed {
+	line-height: 1.625;
+}
+
+.leading-loose {
+	line-height: 2;
+}
+
+.v-invisible {
+	visibility: hidden;
+}
+
+.ls-8px {
+	letter-spacing: 8px;
+}
+
+.ls-5px {
+	letter-spacing: 5px;
+}
+
+.fs-7 {
+	font-size: 0.75rem;
+}
+
+.fw-bolder {
+	font-weight: 900 !important;
+}
+
+.fw-medium {
+	font-weight: 600;
+}
+
+.p-8 {
+	padding: 7.5rem;
+}
+
+.py-13 {
+	padding-top: 15rem;
+	padding-bottom: 15rem;
+}
+
+.pe-6 {
+	padding-right: 4.5rem;
+}
+
+.mp-0 {
+	margin: 0 !important;
+	padding: 0 !important;
+}
+
+.mb-8rem {
+	margin-bottom: 8rem;
+}
+
+.min-vh-50 {
+	min-height: 50vh;
+}
+
+.z-999 {
+	z-index: 999;
+}
+
+.text-border-bottom-center::after {
+	content: '';
+	display: block;
+	width: 10%;
+	border-bottom: 4px solid #fff;
+	z-index: 0;
+	margin: auto;
+	padding-top: 0.8rem;
+}
+
+/* 
+------------------------------------------- 
+	NAVBAR 
+-------------------------------------------
+*/
+
+.text-navbar {
+	font-size: 5rem;
+}
+
+/* 
+------------------------------------------- 
+	SECTION 1
+-------------------------------------------
+*/
+.bg-image-1 {
+	background-image: url(../image/bg-1.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.bg-image-1::before {
+	content: "";
+	position: absolute;
+	left: 0;
+	right: 0;
+	top: 0;
+	bottom: 0;
+	background: rgba(0, 0, 0, .3);
+	filter: grayscale(1);
+}
+
+/* 
+------------------------------------------- 
+	SECTION 2
+-------------------------------------------
+*/
+.bg-image-2 {
+	background-image: url(../image/bg-2.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+}
+
+/* 
+------------------------------------------- 
+	SECTION 3
+-------------------------------------------
+*/
+.bg-image-3 {
+	background-image: url(../image/bg-3.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+}
+
+/* 
+------------------------------------------- 
+	SECTION 4
+-------------------------------------------
+*/
+.bg-image-4 {
+	background-image: url(../image/bg-4.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+}
+
+/* 
+------------------------------------------- 
+	SECTION 5
+-------------------------------------------
+*/
+.bg-image-5 {
+	background-image: url(../image/bg-5.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+}
+
+/* 
+------------------------------------------- 
+	SECTION 6
+-------------------------------------------
+*/
+.bg-image-6 {
+	background-image: url(../image/bg-6.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+}
+
+/* 
+------------------------------------------- 
+	SECTION 7
+-------------------------------------------
+*/
+.bg-image-7 {
+	background-image: url(../image/bg-7.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+}
+
+/* 
+------------------------------------------- 
+	BREAKPOINT
+-------------------------------------------
+*/
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) {}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+	/* 
+	------------------------------------------- 
+		SECTION 1
+	-------------------------------------------
+	*/
+	.bg-image-1 {
+		background-image: url(../image/bg-1.jpg);
+		background-repeat: no-repeat;
+		background-size: cover;
+		background-position-x: center;
+		background-position-y: -1900px;
+	}
+
+	/* 
+	------------------------------------------- 
+		NAVBAR 
+	-------------------------------------------
+	*/
+	.text-navbar {
+		font-size: 6rem;
+	}
+}
+
+/* X-Large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {}
+
+/* XX-Large devices (larger desktops, 1400px and up) */
+@media (min-width: 1400px) {}
