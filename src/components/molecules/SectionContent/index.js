@@ -56,6 +56,7 @@ const index = () => {
               <div className="row" key={`content-${index}`}>
                 <Article
                   className={index % 2 === 0 ? "order-1" : "order-1 order-lg-0"}
+                  text={index % 2 === 0 ? "text-start" : "text-end"}
                   title={list.title}
                   description={list.description}
                   href={list.href}

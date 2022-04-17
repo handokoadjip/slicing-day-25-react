@@ -6,9 +6,12 @@ const index = (props) => {
   const className = ["col-lg-6", "d-flex", "align-items-center"];
   className.push(props.className);
 
+  const text = ["wrapper", "mx-5", "mb-5", "mb-lg-0"];
+  text.push(props.text);
+
   return (
     <div className={className.join(" ")}>
-      <div className="wrapper mx-5 mb-5 mb-lg-0">
+      <div className={text.join(" ")}>
         <h2 className="text-capitalize fw-medium">{props.title}</h2>
         <p className="leading-loose text-fade-1 mb-4">{props.description}</p>
         <Link className="text-decoration-underline fw-medium" to={props.href}>
@@ -21,6 +24,7 @@ const index = (props) => {
 
 index.propTypes = {
   className: propTypes.string,
+  text: propTypes.string,
   title: propTypes.string,
   description: propTypes.string,
 };
